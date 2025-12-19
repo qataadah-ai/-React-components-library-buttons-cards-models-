@@ -1,0 +1,23 @@
+.btn {
+  padding: 10px 30px;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+ }
+
+
+ .btn-primary{
+  background-color: rgb(26, 66, 197);
+  color: white;
+  
+ }
+ .btn-secondary{
+  background-color: rgb(46, 48, 57);
+  color: white;
+
+ }
+ .btn-danger{
+  background-color: rgb(228, 12, 12);
+  color: white;
+
+ }
