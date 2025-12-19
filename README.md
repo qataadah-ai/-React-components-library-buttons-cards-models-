@@ -24,7 +24,7 @@ The goal of this project is to understand **component reusability, props, and la
 ### 1️⃣ Clone the project
 
 ```bash
-git clone <your-repo-url>
+git clone (https://github.com/qataadah-ai/-React-components-library-buttons-cards-models-)
 ```
 
 ### 2️⃣ Install dependencies
