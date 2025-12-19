@@ -1,16 +1,107 @@
-# React + Vite
+# React UI Component Library
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and reusable **React UI Component Library** built for learning and practical use.
+This project includes commonly used components like **Button**, **Card**, and **Model**, designed with clean structure and reusable patterns.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📌 Project Description
 
-## React Compiler
+This library helps you avoid writing the same UI code again and again.
+Each component is:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* Reusable
+* Easy to customize using props
+* Beginner‑friendly
+* Suitable for small to medium React projects
 
-## Expanding the ESLint configuration
+The goal of this project is to understand **component reusability, props, and layout separation** in React.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## ⚙️ Installation Instructions
+
+### 1️⃣ Clone the project
+
+```bash
+git clone <your-repo-url>
+```
+
+### 2️⃣ Install dependencies
+
+```bash
+npm install
+```
+
+### 3️⃣ Start the development server
+
+```bash
+npm run dev
+```
+
+---
+
+## 🚀 Usage Guidelines
+
+### Import components
+
+```jsx
+import { Button, Card, Modal } from "./index";
+```
+
+---
+
+### Button Component
+
+```jsx
+<Button
+  text="Click Me"
+  type="primary"
+  onClick={() => alert("Button clicked")}
+/>
+```
+
+**Props:**
+
+* `text` → Button label
+* `type` → primary | secondary | danger
+* `onClick` → click handler
+
+---
+
+### Card Component
+
+```jsx
+<Card
+  title="My Card"
+  img="https://example.com/image.jpg"
+>
+  <p>This is card content</p>
+</Card>
+```
+
+**Props:**
+
+* `title` → Card heading
+* `img` → Optional image URL
+* `children` → Card content
+
+---
+
+### Modal Component
+
+```jsx
+<Modal isOpen={open} onClose={() => setOpen(false)}>
+  <h3>Hello Modal</h3>
+  <p>This modal is reusable</p>
+</Modal>
+```
+
+**Props:**
+
+* `isOpen` → Controls visibility
+* `onClose` → Close handler
+* `children` → Modl content
+
+---
+
