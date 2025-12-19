@@ -10,7 +10,7 @@ function App() {
       
       {/* Button */}
       <Button
-        text="Open Modal"
+        text="Open Model"
         type="primary"
         onClick={() => setOpen(true)}
       />
@@ -34,8 +34,8 @@ function App() {
 
       {/* Modal */}
       <Modal isOpen={open} onClose={() => setOpen(false)}>
-        <h3>Hello Modal</h3>
-        <p>This modal is reusable</p>
+        <h3>Hello Model</h3>
+        <p>This model is reusable</p>
 
         <Button
           text="Close"
